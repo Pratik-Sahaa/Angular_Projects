@@ -1,0 +1,35 @@
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    font-family: calibri;
+    font-size: x-large;
+}
+
+hr{
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-top: 1px solid gainsboro;
+
+}
+
+a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div {
+    margin-bottom: 5px;
+}
+
+.active {
+    font-weight: 600;
+}
+

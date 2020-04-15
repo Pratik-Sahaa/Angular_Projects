@@ -1,0 +1,8 @@
+<div *ngFor="let user of usersList">
+
+    <div class=boxes *ngIf="(user.isDeleted === false)"><b>{{user.firstName}}</b>
+        <button class="deactivatebtn" (click)=deactivate(user.id)>Deactivate</button></div>
+</div>
+
+
+<router-outlet></router-outlet>

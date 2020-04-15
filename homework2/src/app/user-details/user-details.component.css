@@ -1,0 +1,23 @@
+.deactivatebtn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+    margin-left: 90%;
+    margin-right: 2%;
+    margin-top: 0px;
+    background-color: rgb(238, 56, 56);
+    font-family: calibri;
+    font-size: medium;
+}
+
+.boxes{
+    background-color: rgb(221, 235, 235);
+    border: 1px solid rgb(67, 9, 122);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    font-family: calibri;
+    font-size: large;
+}

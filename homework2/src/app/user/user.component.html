@@ -1,0 +1,39 @@
+<div class="fullpage">
+    <div class="listbox" *ngFor="let user of usersList">
+
+        <div class="box"><b>{{user.firstName}}</b><button ngClass="detailbtn"
+                (click)=showDetails(user.id)>Details</button></div>
+    </div>
+
+    <div id=sidebox>
+
+        <h1>{{fname | fullname : fname : lname | uppercase}}</h1>
+        <p id="status" target=""><b>{{currentstatus | status : currentstatus}}</b></p>
+        <table>
+
+            <tr>
+                <td><b>Login Id</b></td>
+                <td>: {{loginId}}</td>
+            </tr> <br>
+            <tr>
+                <td><b>First Name</b></td>
+                <td>: {{fname}}</td>
+            </tr> <br>
+            <tr>
+                <td><b>Last Name</b></td>
+                <td>: {{lname}}</td>
+            </tr> <br>
+            <tr>
+                <td><b>Age</b></td>
+                <td>: {{userAge}}</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+   
+
+
+
+</div>
