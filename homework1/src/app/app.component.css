@@ -1,0 +1,12 @@
+div {
+    margin-bottom: 5px;
+}
+
+.titlebox{
+    background-color: rgb(250, 242, 242);
+    padding: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: calibri;
+    font-size: large;
+}
