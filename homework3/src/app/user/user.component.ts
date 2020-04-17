@@ -37,7 +37,7 @@ export class UserComponent {
   // lname = "";
   // loginId = "";
   // userAge = null;
-  // currentStatus=null;
+  currentStatus=null;
 
   showUserDetail(Id) {
 
@@ -52,6 +52,16 @@ export class UserComponent {
         this.lname = this.usersList[i].lastName;
         this.login = this.usersList[i].login;
         this.age = this.usersList[i].age;
+        if (this.usersList[i].isDeleted)
+        {
+          document.getElementById('status').setAttribute('target','Active' );
+          this.currentStatus="Active";
+        }
+        else{
+          document.getElementById('status').setAttribute('target','NotActive' );
+          this.currentStatus="Deactivated";
+
+        }
       }
     }
   }
