@@ -1,0 +1,98 @@
+<!-- <button class="refreshbtn" (click)="getAllUsers()">Refresh Users</button> -->
+<button class="createbtn" (click)="createUser()">Create User</button>
+<button class="deletebtn" (click)="deleteUser()">Delete User</button>
+
+<div id=boxes>
+    <div id=sidebox>
+        <h1>{{fname | fullname : fname : lname | uppercase}}</h1>
+        <!-- <p id="status" target=""><b>{{ }}</b></p> -->
+        <table>
+            <tr>
+                <td><b>Login Id</b></td>
+                <td>: {{login}}</td>
+            </tr> <br>
+            <tr>
+                <td><b>First Name</b></td>
+                <td>: {{fname}}</td>
+            </tr> <br>
+            <tr>
+                <td><b>Last Name</b></td>
+                <td>: {{lname}}</td>
+            </tr> <br>
+            <tr>
+                <td><b>Age</b></td>
+                <td>: {{age}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="createuser">
+        <table>
+            <tr>
+                <td><b>First Name</b></td>
+                <td>: <input type="text" [(ngModel)]="fname" /></td>
+            </tr> <br>
+            <tr>
+                <td><b>Last Name</b></td>
+                <td>: <input type="text" [(ngModel)]="lname" /></td>
+            </tr> <br>
+            <tr>
+                <td><b>Login</b></td>
+                <td>: <input type="text" [(ngModel)]="login" /></td>
+            </tr> <br>
+            <tr>
+                <td><b>Password</b></td>
+                <td>: <input type="text" [(ngModel)]="password" /></td>
+            </tr> <br>
+            <tr>
+                <td><b>Age</b></td>
+                <td>: <input type="number" [(ngModel)]="age" /></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div id="updateuser">
+        <table>
+            <tr>
+                <td><b>User Id</b></td>
+                <td>: <input type="text" [(ngModel)]="id" /></td>
+            </tr> <br>
+            <tr>
+                <td><b>Password</b></td>
+                <td>: <input type="text" [(ngModel)]="password" /></td>
+            </tr> <br>
+            <tr>
+                <td><b>Age</b></td>
+                <td>: <input type="number" [(ngModel)]="age" /></td>
+            </tr> <br>
+            <tr>
+                <td><b>Status</b></td>
+                <td> <select type="number" class="form-control" [(ngModel)]="isDeleted">
+                        <option value="false"> Activate </option>
+                        <option value="true"> Deactivate </option>
+                    </select>
+                </td>
+            </tr> <br>
+            <button class="btn btn-primary" (click)="updateUser()">Update User</button>
+
+        </table>
+
+    </div>
+
+    <div id="deleteuser">
+        <button class="btn btn-primary" (click)="deleteUser()">Delete User</button>
+        User Id <input type="text" [(ngModel)]="id" />
+    </div>
+
+</div>
+
+<div class=upper>
+
+    <div class="box" *ngFor="let user of usersList">
+        <b>{{user.firstName}}</b>
+        <button class="btn btn-primary" (click)=updateUser()>Edit</button>
+        <button class="btn btn-primary" (click)=showUserDetail(user.id)>Details</button>
+    </div>
+</div>

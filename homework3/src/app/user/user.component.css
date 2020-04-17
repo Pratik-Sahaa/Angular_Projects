@@ -1,0 +1,104 @@
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(221, 235, 235);
+  border: 1px solid rgb(24, 45, 163);
+  padding: 20px;
+  margin-left: 5%;
+  font-family: calibri;
+  font-size: large;
+  margin-top: 20px;
+  margin-right: 50%;
+}
+
+.btn{
+    padding: 2px;
+    margin-top: 0px;
+    max-width: 80px;
+    background-color: rgb(93, 23, 204);
+    font-family: calibri;
+    font-size: medium;
+    color: white;
+}
+
+#sidebox {
+    position: inherit;
+    float: right;
+    background-color: rgb(221, 235, 235);
+    border: 1px solid rgb(24, 45, 163);
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: calibri;
+    font-size: large;
+    object-position: top;
+    margin-right: 5%;
+}
+p[target=""] {
+    color: rgb(179, 179, 170);
+  }
+
+p[target="Active"] {
+    color: rgb(14, 233, 98);
+  }
+
+  p[target="NotActive"] {
+    color: rgb(212, 11, 11);
+  }
+
+.redbox{
+  background-color: rgb(221, 235, 235);
+  border: 1px solid rgb(231, 16, 34);
+  padding: 20px;
+  margin-left: 5%;
+  margin-right: 50%;
+  margin-top: 20px;
+  font-family: calibri;
+  font-size: large;
+}
+
+.createbtn {
+  margin-left: 82%;
+  margin-right: 15px;
+  border-radius: 1px;
+  border-color: black;
+  color: beige;
+  padding: 2px;
+  margin-top: 0px;
+  max-width: 80px;
+  background-color: rgb(93, 23, 204);
+  font-family: calibri;
+  font-size: medium;
+
+}
+.deletebtn{
+  border-radius: 1px;
+  border-color: black;
+  color: beige;
+  padding: 2px;
+  margin-top: 0px;
+  max-width: 80px;
+  background-color: rgb(93, 23, 204);
+  font-family: calibri;
+  font-size: medium;
+}
+
+#createuser, #updateuser , #deleteuser{
+  float: right;
+  object-position: top;
+  margin-right: 5%;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: blue;
+  padding: 40px;
+}
+
+/* #boxes{
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+/* .upper{
+  scroll-margin-top: -50px;
+} */

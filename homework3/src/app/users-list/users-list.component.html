@@ -1,0 +1,5 @@
+<div *ngFor="let user of usersList">
+
+    <div class=boxes *ngIf="(user.isDeleted === true)"><b>{{user.firstName}}</b>
+        <button class="activatebtn primary-btn" (click)=activate(user.login)>Activate</button></div>
+</div>
