@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class StatusPipe implements PipeTransform {
 
-  transform(value: string, statusnow : boolean): any {
+  transform( statusnow : boolean): any {
     var statusElement = document.getElementById("status");
     if (statusnow === true) {
       status = "Deactivated";

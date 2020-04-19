@@ -9,6 +9,7 @@ import { UsersService } from './users.service';
 
 
 export class AppComponent  {
+  title = 'Homework3';
 
   constructor(private usersService: UsersService) { }
 

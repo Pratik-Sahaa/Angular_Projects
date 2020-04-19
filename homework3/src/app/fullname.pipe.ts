@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FullnamePipe implements PipeTransform {
 
-  transform(value: string, firstName:string, lastName: string): string {
+  transform(firstName:string, lastName: string): string {
     if(lastName=== ""){
       return "USER";
     }
